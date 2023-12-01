@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Ticket Text Extractor",
+    "version": "1.0",
+    "description": "Extract text from specific elements.",
+    "permissions": [
+        "activeTab"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}

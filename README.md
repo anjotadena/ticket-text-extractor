@@ -1,0 +1,1 @@
+# A Ticket text extractor
